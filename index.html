@@ -10,22 +10,24 @@
     <title>Zoom</title>
 </head>
 <body>
-    <div class="container-blk">
+    
+<div class="container-blk">
 
 <!--Header-->
 
-        <header class="debugcolor">
-            <button class="grid"><i class="fa-solid fa-grip"></i>Speaker View</button>
-            <button class="maximize"><i class="fa-solid fa-maximize"></i></button>
-        </header>
+    <header>
+    <button class="grid"><i class="fa-solid fa-grip"></i>Speaker View</button>
+    <button class="maximize"><i class="fa-solid fa-maximize"></i></button>
+    </header>
 
 <!--Header End-->
 <!--Main-->
 
-        <main>
+    <main>
 
             <!--Thumbnail Gallery-->
 
+            <section>
             <div class="thumbnailsgallery">
                 <div class="thumbnail">
                     <img src="https://picsum.photos/240/140" alt="photo1">
@@ -238,11 +240,38 @@
                     </div>
                 </div>
             </div>
+            </section>
 
             <!--Thumbnail Gallery End-->
 
-        </main>
-    </div>    
+            <!--Bottom Bar -->
+
+            <section>
+            <div id="bottombar">
+                <div id="leftbar">
+                    <button class="buttona"><i class="fa-solid fa-microphone"></i><span>Mute</span><i class="right fa-solid fa-chevron-up"></i></button>
+                    <button class="buttona"><i class="fa-solid fa-video"></i>Stop Video<i class="right fa-solid fa-chevron-up"></i></button>
+                </div>
+                <div id="centrbar">
+                    <button class="buttona"><i class="fa-solid fa-user-plus"></i>Invite</button>
+                    <button class="buttona"><i class="fa-solid fa-user-group"></i>Manage Partecipants</button>
+                    <button class="buttona"><i class="fa-solid fa-chart-column"></i>Polling</button>
+                    <button class="buttona"><i class="gr fa-solid fa-share-from-square"></i>Share Screen<i class="right fa-solid fa-chevron-up"></i></button>
+                    <button class="buttona"><i class="fa-solid fa-comment"></i>Chat</button>
+                    <button class="buttona"><i class="fa-solid fa-compact-disc"></i>Record</button>
+                    <button class="buttona"><i class="fa-solid fa-table-cells-large"></i>Breackout Rooms</button>
+                    <button class="buttona"><i class="fa-solid fa-ellipsis"></i>More</button>
+                </div>
+               <div id="rightbar">
+                <button class="buttonexit">End meeting</button>
+                </div>
+            </div>
+            </section>            
+        
+            <!--Bottom Bar  End-->
     
+       
+    </main>    
+</div>    
 </body>
 </html>

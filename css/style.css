@@ -7,21 +7,24 @@
     padding:0px;
     }
 
-body {
-    height:100vh;
-    width:100vw;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    }    
-
     .container-blk{
         background-color: black;
-        height: 100vh;
-        width: 100vw;
+        height:100vh;
+        width:100vw;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
         
 /* Utility */
 
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.space{
+    justify-content: space-around;
+}
 
 
 /************** Header **************/
@@ -38,8 +41,9 @@ header button{
     background-color: grey;
     border-radius:15%;
     color:white;
-    font-size: 0.9rem;
-    padding: 3px;
+    font-size: 0.8rem;
+    padding: 1px 2px;
+    text-align: center;
 }
 
 header button i{
@@ -65,25 +69,80 @@ header button i{
 .thumbnail div{
     display: inline-block;
     position: absolute;
-    bottom: 0%;
-    left: 0%;
+    bottom: 4px;
+    left: 0;
     background-color: grey;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 200;
 }
 
 .thumbnail div h6{
     font-weight: 200;
+    color: white;
+    font-size: 0.9rem;
 }
 
 .thumbnail div h6:before{
     content: "\f131";
+    font-weight: 900;
     font-family: "Font Awesome 5 free";
 }
 
 
+ #bottombar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#222222;
+}
+
+.buttona{
+    padding: 15px 15px;
+    height: 90px;
+    width: 110px;
+    line-height: 90px;
+    font-size: small;
+    color: white;
+    background-color: transparent;
+    border: none; 
+    position: relative;
+}
+
+.buttona i:not(.right){
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50% , -20%);
+    padding: 5px;
+    font-size: 1.8rem;
+}
+
+.buttonexit{
+    text-align: center;
+    padding: 15px 15px;
+    height: 100%;
+    font-size: large;
+    background-color: #4a4a4a;
+    border: none;   
+    color: red;
+}
+
+.buttona:hover{
+    opacity: 0.7;
+}
+
+.buttonexit:hover{
+    opacity: 0.7;
+}
+
+.gr{
+    color: greenyellow;
+}
+
+.right{
+    position:absolute;
+    right: 0%;
+    top: 40%;
+}
 
 
-/************** Footer **************/
+
 
