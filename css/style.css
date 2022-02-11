@@ -59,7 +59,6 @@ header button i{
     width:90%;
     margin: 30px auto;
     flex-wrap: wrap;
-    overflow-y: auto;
 }
 
 .thumbnail{
