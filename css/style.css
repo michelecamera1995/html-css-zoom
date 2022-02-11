@@ -27,6 +27,7 @@
 }
 
 
+
 /************** Header **************/
 
 header {
@@ -58,6 +59,7 @@ header button i{
     width:90%;
     margin: 30px auto;
     flex-wrap: wrap;
+    overflow-y: auto;
 }
 
 .thumbnail{
@@ -86,6 +88,8 @@ header button i{
     font-family: "Font Awesome 5 free";
 }
 
+/************** Bottom Bar **************/
+
 
 .bottombar {
     width: 100%;
@@ -96,33 +100,35 @@ header button i{
 
 .buttona{
     padding: 15px 15px;
-    height: 90px;
-    width: 110px;
-    line-height: 90px;
+    height: 5vw;
+    bottom: 0%;
+    left: 0%;
+    width: 100px;
     font-size: small;
     color: white;
     background-color: transparent;
     border: none; 
     position: relative;
+    vertical-align: middle;
 }
 
 .buttona i:not(.right){
     position: absolute;
-    top:20%;
+    top:5%;
     left:50%;
-    transform: translate(-50% , -20%);
-    padding: 5px;
-    font-size: 1.8rem;
+    transform: translate(-50% , -5%);
+    font-size: 1.5rem;
 }
 
 .buttonexit{
-    text-align: center;
     padding: 15px 15px;
-    height: 100%;
+    height: auto;
     font-size: large;
     background-color: #4a4a4a;
     border: none;   
     color: red;
+    vertical-align: middle; 
+    ;
 }
 
 .buttona:hover{
@@ -140,7 +146,7 @@ header button i{
 .right{
     position:absolute;
     right: 0%;
-    top: 40%;
+    top: 25%;
 }
 
 
